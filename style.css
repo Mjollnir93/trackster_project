@@ -7,32 +7,11 @@ html {
  font-size: 16px;
 }
 
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.col-xs-2 {
-  width: 16.666%;
-}
-
-.col-xs-offest-2 {
-  width: 16.666%;
-}
-
-.col-xs-4 {
-  width: 33.3333%;
-}
-
 body {
-
+  min-width: 570px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 2.5;
+  color: #4a4a4a;
 }
 
 /* Header */
@@ -65,11 +44,9 @@ background-color: rgb(35, 2, 63);
   color: #22013f;
 }
 
-.info {
+.attributes {
   background-color: rgb(104, 0, 255);
   color: white;
-  height: 50px;
-  width: 100%;
   font-weight: 500;
 }
 
