@@ -1,5 +1,5 @@
 var Trackster = {};
-const API_KEY = '0c9fada55cecff54e6d6f6664a0e3ccf'
+const API_KEY = '0c9fada55cecff54e6d6f6664a0e3ccf';
 
 $(document).ready(function() {
   $('#search-button').click(function() {
@@ -18,17 +18,19 @@ Trackster.renderTracks = function(tracks) {
      for (var trackIndex = 0; trackIndex < length; trackIndex++) {
 
         var htmlTrackRow =
-        '<div class="row track">'
-         '<div class="col-xs-1 col-xs-offset-1 play-button">'
-           '<a href="https://youtu.be/eI_O5_tJ1hA" target="_blank">'
-            '<i class="fa fa-play-circle-o fa-2x"></i>'
-            '</a>'
-            '</div>'
-            '<div class="col-xs-4">23. United</div>'
-            '<div class="col-xs-2">Throbbing Gristle</div>'
-            '<div class="col-xs-2">Greatest Hits</div>'
-            '<div class="col-xs-2">23</div>'
-            '</div>'
+        '<div class="row track">'+
+         '<div class="col-xs-1 col-xs-offset-1 play-button">'+
+           '<a href="https://youtu.be/eI_O5_tJ1hA" target="_blank">'+
+            '<i class="fa fa-play-circle-o fa-2x"></i>'+
+            '</a>'+
+            '</div>'+
+            '<div class="col-xs-4">' + tracks[i].title + '</div>'+
+            '<div class="col-xs-2">' + tracks[i].artist + '</div>'+
+            '<div class="col-xs-2">' + tracks[i].title + '</div>'+
+            '<div class="col-xs-2">' + tracks[i].listeners + '</div>'+
+            '</div>';
+
+            $trackList.append(htmlTrackRow);
      }
 
 };
